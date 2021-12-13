@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Mariam Omar</title>
+</head>
+
+<body>
+    <div class="image">
+        <nav id="navbar" class="navbar navbar-expand-lg px-3">
+            <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation" style="float:left">
+                    <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                        type="button" role="tab" aria-controls="pills-home" aria-selected="true" href="#home">Mariam
+                        Omar</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false"
+                        href="#contact">Contact</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-interests-tab" data-bs-toggle="pill" data-bs-target="#pills-interests"
+                        type="button" role="tab" aria-controls="pills-interests" aria-selected="false"
+                        href="#interests">Interests</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-portfolio-tab" data-bs-toggle="pill" data-bs-target="#pills-portfolio"
+                        type="button" role="tab" aria-controls="pills-portfolio" aria-selected="false"
+                        href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-experience-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-experience" type="button" role="tab" aria-controls="pills-experience"
+                        aria-selected="false" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-education-tab" data-bs-toggle="pill" data-bs-target="#pills-education"
+                        type="button" role="tab" aria-controls="pills-education" aria-selected="false"
+                        href="#education">Education</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-about-tab" data-bs-toggle="pill" data-bs-target="#pills-about"
+                        type="button" role="tab" aria-controls="pills-about" aria-selected="false"
+                        href="#about">About</a>
+                </li>
+            </ul>
+            <div class="text">
+                <h1 style="font-size:50px">Mariam Omar</h1>
+                <p>Student of Computing with Software Development</p>
+                <button>Contact me</button>
+                <a href="MariamOmarCV.pdf" download="MariamOmarCV.pdf" target="_blank">
+                    <button>Download CV</button>
+                </a>
+            </div>
+    </div>
+    <div class="bg-image img1">
+        <div class="tab-content" id="pills-tabContent" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0"
+            class="scrollspy" tabindex="0">
+
+            <!--<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <h2 id="home">home heading</h2>
+            <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                adding some more example copy here to emphasize the scrolling and highlighting.This is some placeholder
+                content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link
+                is highlighted. It's repeated throughout the component example. We keep adding some more example copy
+                here to emphasize the scrolling and highlighting.</p>
+        </div>-->
+        </div>
+
+        <div class="tab-pane fade" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
+
+            <h2 id="about">About Me</h2>
+            <div class=imageMe style="float: left;">
+                <img src="me.jpg" alt="Avatar" style="width:250px">
+            </div>
+            <p style="float:unset;">Endeavoring young student, with a passion for learning how things work and how to
+                fix them with an
+                open
+                problem-solving mindset.
+                I am seeking job opportunities in software development and testing,
+                web
+                development, database, or information security. A highly motivated computing student with a devotion
+                to
+                learning and gaining skills and understanding of ICT in todays world. Interested in adding my
+                personal strengths
+                such as group work, problem-solving (in a variety of different situations) and my technical skills
+                to hopefully
+                make a positive contribution to your organization, while gaining valuable real-life industry
+                knowledge alongside
+                the theoretical.
+            </p>
+            <div class="tab">
+                <button class="tablinks" onclick="openSkills(event, 'general')">General Skills</button>
+                <button class="tablinks" onclick="openSkills(event, 'technical')">Technical Skills</button>
+            </div>
+            <div id="general" class="tabcontent">
+                <h5>Teamwork, Multilingual, Leadership, Problem Solving</h5>
+                <p> I have obtained teamwork skills working on assignments and projects throughout my
+                    course, working with a variety of different people.
+                    Throughout my life I have acquired multiple languages which have aided me in my communication
+                    skills (English, Arabic, Bosnian, Croatian, Serbian, French, Irish).
+                    Working in teams has led me to further develop my leadership skills, as a leader in a group project
+                    I find the strengths and weaknesses of my teammates and give them the tasks that they would
+                    excel in while
+                    also giving them challenges to further their knowledge and skills.
+                    I have further developed my problem-solving skills by observing, analyzing
+                    and
+                    making
+                    design decisions on my second-year project. I have also developed problem-solving skills in
+                    other
+                    aspects, for
+                    example working on the design and building of a chicken/pigeon coop.
+                </p>
+            </div>
+            <div id="technical" class="tabcontent">
+                <h4>Software Design and Development:</h4>
+                <p> Django,
+                    JavaScript, CSS, HTML, Python, Java UML.
+                </p>
+                <h4>Database:</h4>
+                <p>SQL using Oracle 11G. Design and create database
+                    schemas based on normalised and ERD designs.
+                    Represent data using Jupyter Notebook.
+                </p>
+                <h4>Mathematics:</h4>
+                <p>Confident in my understanding of binary numbers and converting and
+                    problem-solving.
+                    Competent in my knowledge of modular arithmetic, encryption and decryption.
+                </p>
+                <h4>Software Testing:</h4>
+                <p>I am confident in testing software using Selenium IDE and PyCharm.</p>
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="bg-image img2">
+        <div class="tab-pane fade" id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab">
+
+            <div class=imageMe style="float: right;">
+                <a href="https://tudublin.ie/for-students/student-login/tallaght/" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="Technological-University-Dublin-Logo.jpg" alt="Avatar" style="width:300px">
+                </a>
+            </div>
+            <h2 id="education">Education</h2>
+            <a href="https://tudublin.ie/for-students/student-login/tallaght/" target="_blank"
+                rel="noopener noreferrer">
+                <h4>TU Dublin Tallaght</h4>
+            </a>
+            <p>September 2018 to Present: Technological University Dublin - Tallaght Campus
+                Course: BSc in Computing with Software Development (Level 8)
+            </p>
+            <p>See results below</p>
+            <div class="tab">
+                <button class="tablinks" onclick="openYear(event, '4thYear')">4th Year</button>
+                <button class="tablinks" onclick="openYear(event, '3rdYear')">3rd Year</button>
+                <button class="tablinks" onclick="openYear(event, '2ndYear')">2nd Year</button>
+                <button class="tablinks" onclick="openYear(event, '1stYear')">1st Year</button>
+            </div>
+
+            <div id="4thYear" class="tabcontent">
+                <p>4th Year GPA = NA</p>
+                <table>
+                    <tr>
+                        <th style="float: left;">Module</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>Applied Machine Learning</td>
+                        <td>NA</td>
+                    </tr>
+                    <tr>
+                        <td>Enterprise Application Development 1</td>
+                        <td>NA</td>
+                    </tr>
+                    <tr>
+                        <td>Information Management</td>
+                        <td>NA</td>
+                    </tr>
+                    <tr>
+                        <td>Interative Media Design and Visualisation</td>
+                        <td>NA</td>
+                    </tr>
+                    <tr>
+                        <td>Enterprise Performance Architechture</td>
+                        <td>NA</td>
+                    </tr>
+                    <tr>
+                        <td>Project</td>
+                        <td>NA</td>
+                    </tr>
+                    <tr>
+                        <td>Enterprise Application Development 2</td>
+                        <td>NA</td>
+                    </tr>
+                    <tr>
+                        <td>Algorithms and Computational Theory</td>
+                        <td>NA</td>
+                    </tr>
+                    <tr>
+                        <td>Applied AI and Deep Learning</td>
+                        <td>NA</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="3rdYear" class="tabcontent">
+                <p>3rd Year GPA = 2.21</p>
+                <table>
+                    <tr>
+                        <th style="float: left;">Module</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>Data Analysis</td>
+                        <td>B-</td>
+                    </tr>
+                    <tr>
+                        <td>Cloud Services and Distributed Computing</td>
+                        <td>C+</td>
+                    </tr>
+                    <tr>
+                        <td> Operating Systems</td>
+                        <td>C+</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced Database Technologies</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Server-side Web Development</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Data Structures and Algoritms</td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <td>Experiental Learning</td>
+                        <td>PS</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="2ndYear" class="tabcontent">
+                <p>2nd Year GPA = 2.73</p>
+                <table>
+                    <tr>
+                        <th style="float: left;">Module</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>Routing & Switching Essentials</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Management Science</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <td>Discrete Mathematics 2</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <td>Database Administration and Analysis</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Client-Side Web Development</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Software Development 3</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Software Quality Assurance and Testing</td>
+                        <td>C+</td>
+                    </tr>
+                    <tr>
+                        <td>Software Development 4</td>
+                        <td>C+</td>
+                    </tr>
+                    <tr>
+                        <td>Information Security</td>
+                        <td>C+</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced Database Technologies</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Project</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Network Fundamentals</td>
+                        <td>D</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="1stYear" class="tabcontent">
+                <p>1st Year GPA = 2.96</p>
+                <table>
+                    <tr>
+                        <th style="float: left;">Module</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>Discrete Mathematics 1</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Critical Skills Development</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Statistics</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <td>Business & Information Systems</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <td>Social Media Communications</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <td>Visual Design and User Experience 1</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Visual Design and User Experience 2</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Systems Analysis</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Computer Architecture</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Database Fundamentals</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Software Development 1</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Operating Systems Fundamentals</td>
+                        <td>C</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="bg-image img3">
+            <div class="tab-pane fade" id="pills-experience" role="tabpanel" aria-labelledby="pills-experience-tab">
+                <h2 id="experience">Work Experience</h2>
+                <div class=imageWD style="float: right;">
+                    <img src="WD.png" alt="Avatar" style="width:800px">
+                </div>
+                <a href="https://www.workday.com/" target="_blank" rel="noopener noreferrer">
+                    <h4>Workday</h4>
+                </a>
+                <p>
+                    I undertook my work experience as an intern at Workday.
+                    My role within Workday was Application Developer/Software Application Engineer in Time management
+                    or more specifically Absence. My role involved working as part of a Scrum team to develop features
+                    that will
+                    be useful to Workday customers. This involved taking a project and coming up with smaller more
+                    manageable tasks
+                    so that we can achieve our end goal, which is to release features requested by Workday customers.
+                </p>
+
+                <p>At the beginning of my internship, I was assigned a project that I would work on for the duration of
+                    my internship.
+                    The project was a highly requested feature by Workday customers, it was a button that would help
+                    decrease the amount of
+                    clicks a user had to click and make the process more intuitive to all users. Before my changes when
+                    a user would try deleting
+                    an approved Time Off, they would have to select each day and correct the quantity to zero or
+                    manually click on the minus icon to
+                    remove each entry in the event. This is not very intuitive, so my changes would make it so that the
+                    user would only need to select the
+                    band that contains the entries and click on the Delete Request button to remove the approved Time
+                    off, I also needed to be sure that
+                    it worked in both the Time Off calendar and the Absence calendar.
+                </p>
+            </div>
+        </div>
+        <div class="bg-image img4">
+            <div class="tab-pane fade" id="pills-portfolio" role="tabpanel" aria-labelledby="pills-portfolio-tab">
+                <h2 id="portfolio">Portfolio</h2>
+                <div class=imageproject style="float: right;">
+                    <img src="project1.png" alt="project" style="width:800px">
+                </div>
+                <p>I created an interactive dashboard that takes the user through Homicide in the USA and how factors
+                    such as age, race, sex and gender can have an impact
+                    and the document details ways that may be effective in predicting homicides and preventing them.
+                </p>
+                <div class="text2">
+                    <a href="HomicideDashboard.pdf" download="HomicideDashboard.pdf" target="_blank">
+                        <button>Full Homicide Dashboard PDF</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-image img5">
+            <div class="tab-pane fade" id="pills-interests" role="tabpanel" aria-labelledby="pills-interests-tab">
+                <h2 id="interests">Interests</h2>
+                <h4>Innovative ideas</h4>
+                <p> - Thinking of new and innovative ideas that can solve peoples problems and use my knowledge
+                    to
+                    try
+                    and
+                    implement them.
+                    - Building bird houses and making things more space efficient from scratch(e.g.
+                    pull-out beds, outdoor seating, storage, Chicken/Pigeon coop).
+                    - Fixing objects at home (e.g. electrical equipment and furniture).
+                    - Listening and learning from people with more experience to improve my skills.</p>
+                <h4>Women in Technology and Irish Computer Society</h4>
+                <p>- Active member of Women in Technology (WIT) in TUD Tallaght.
+                    - I have attended multiple WIT events, to get to know, support and encourage more women to
+                    join
+                    the
+                    technology industry.
+                    - Member of the Irish Computer Society (ICS).</p>
+                <h4>Learning</h4>
+                <p>- Taking multiple online courses on Udemy to further my knowledge in my field.</p>
+                <div class=imageMe>
+                    <img src="light-bulb.jpg" alt="Avatar" style="width:350px">
+                    <img src="womens-in-tech.jpg" alt="Avatar" style="width:300px">
+                    <img src="udemy-logo.png" alt="Avatar" style="width:350px">
+                </div>
+            </div>
+
+        </div>
+        <div class="bg-image img6">
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <h2 id="contact">Contact Me</h2>
+                <div id="thecontainer">
+                    <div id="contacting">
+                        <i class="fas fa-phone-square-alt">
+                            <p>Phone: +353 874649841</p>
+                        </i>
+                        <i class="fa fa-gmail fa-fw"></i>
+                        <p>Email: mariam2000omar@gmail.com</p>
+                        </i>
+                        <p>LinkedIn: www.linkedin.com/in/mariam-omar-47955b17a</p>
+                        <p>Address: 9 Marlfield Court, Tallaght, Dublin 24</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h3>Mariam Omar</h3>
+    </div>
+</body>
+
+</html>
